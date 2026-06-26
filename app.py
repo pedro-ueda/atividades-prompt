@@ -3,13 +3,13 @@ import nltk
 from collections import Counter
 from nltk.corpus import stopwords
 
+# Garante o download do recurso necessário para a tokenização
+nltk.download("punkt_tab", quiet=True)
+
 st.title("Atividade 1")
 
 
 st.title("Tokenizador")
-
-# Garante o download do recurso necessário para a tokenização
-nltk.download("punkt", quiet=True)
 
 # Texto de exemplo simulando a mensagem de um cliente
 texto_cliente = st.text_input('Insira seu texto')
